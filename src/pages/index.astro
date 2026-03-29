@@ -1,0 +1,1289 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroCanvas from '../components/HeroCanvas.astro';
+---
+
+<Layout title="ARAR Representaciones — Grupo Tecnológico Colombiano">
+  <Header />
+
+  <!-- ================================================================
+       HERO SECTION
+       ================================================================ -->
+  <section class="hero" id="hero">
+    <HeroCanvas />
+    <div class="hero__content container">
+      <h1 class="hero__title animate-on-scroll">
+        Tecnología que transforma empresas
+      </h1>
+      <p class="hero__subtitle animate-on-scroll">
+        Grupo tecnológico colombiano con más de 20 años impulsando la transformación digital empresarial
+      </p>
+      <div class="hero__ctas animate-on-scroll">
+        <a href="#soluciones" class="btn btn--white">Conozca nuestras soluciones</a>
+        <a href="#contacto" class="btn btn--outline-white">Contáctenos</a>
+      </div>
+    </div>
+    <div class="hero__stats animate-on-scroll">
+      <div class="container">
+        <div class="hero__stats-grid">
+          <div class="hero__stat">
+            <span class="hero__stat-number">+20</span>
+            <span class="hero__stat-label">años de experiencia</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">4</span>
+            <span class="hero__stat-label">líneas de negocio</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">+1,000</span>
+            <span class="hero__stat-label">equipos gestionados</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">ERP</span>
+            <span class="hero__stat-label">propio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SOLUTIONS OVERVIEW
+       ================================================================ -->
+  <section class="solutions" id="soluciones">
+    <div class="container">
+      <div class="solutions__header animate-on-scroll">
+        <h2 class="solutions__title">Nuestras Soluciones</h2>
+        <p class="solutions__subtitle">
+          Cuatro líneas de negocio diseñadas para cubrir todo el espectro tecnológico empresarial
+        </p>
+      </div>
+      <div class="solutions__grid">
+        <!-- SAP Consulting -->
+        <a href="/sap" class="solution-card solution-card--sap animate-on-scroll">
+          <div class="solution-card__icon solution-card__icon--sap">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 2.5C14 2.5 17.5 6 17.5 10C17.5 14 14 17.5 14 17.5C14 17.5 10.5 14 10.5 10C10.5 6 14 2.5 14 2.5Z" stroke="#1B344F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="14" cy="14" r="11" stroke="#1B344F" stroke-width="1.8"/>
+              <path d="M14 3V1M14 27V25M3 14H1M27 14H25" stroke="#1B344F" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M7 7L5.5 5.5M22.5 22.5L21 21M7 21L5.5 22.5M22.5 5.5L21 7" stroke="#1B344F" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="14" cy="14" r="3" fill="#1B344F" fill-opacity="0.15" stroke="#1B344F" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3 class="solution-card__title">Consultoría SAP</h3>
+          <p class="solution-card__desc">
+            Maximice el potencial de su ERP SAP con más de 20 años de experiencia en implementación y desarrollo ABAP.
+          </p>
+          <span class="solution-card__link">
+            Conocer más
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- IT Rental -->
+        <a href="/alquiler" class="solution-card solution-card--renting animate-on-scroll">
+          <div class="solution-card__icon solution-card__icon--renting">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="4" width="24" height="16" rx="2" stroke="#1B344F" stroke-width="1.8"/>
+              <path d="M8 24H20" stroke="#1B344F" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M11 20V24" stroke="#1B344F" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M17 20V24" stroke="#1B344F" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="14" cy="12" r="2" fill="#1B344F" fill-opacity="0.15" stroke="#1B344F" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="solution-card__title">Alquiler de Equipos IT</h3>
+          <p class="solution-card__desc">
+            Tecnología sin inversión de capital. Computadores, servidores, impresoras y más con soporte incluido.
+          </p>
+          <span class="solution-card__link">
+            Conocer más
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- AI Automation -->
+        <a href="/ia" class="solution-card solution-card--ai animate-on-scroll">
+          <div class="solution-card__icon solution-card__icon--ai">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <ellipse cx="14" cy="14" rx="11" ry="5" stroke="#1B344F" stroke-width="1.8"/>
+              <ellipse cx="14" cy="14" rx="11" ry="5" stroke="#1B344F" stroke-width="1.8" transform="rotate(60 14 14)"/>
+              <ellipse cx="14" cy="14" rx="11" ry="5" stroke="#1B344F" stroke-width="1.8" transform="rotate(120 14 14)"/>
+              <circle cx="14" cy="14" r="3" fill="#1B344F" fill-opacity="0.15" stroke="#1B344F" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3 class="solution-card__title">Automatización IA</h3>
+          <p class="solution-card__desc">
+            Automatice. Escale. Crezca. Transforme procesos manuales en flujos inteligentes con IA.
+          </p>
+          <span class="solution-card__link">
+            Conocer más
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- 1nativoone ERP -->
+        <a href="/1nativoone" class="solution-card solution-card--nativoone animate-on-scroll">
+          <div class="solution-card__icon solution-card__icon--nativoone">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 3L24 9V19L14 25L4 19V9L14 3Z" stroke="#1B344F" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M14 13L24 9" stroke="#1B344F" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 13L4 9" stroke="#1B344F" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 13V25" stroke="#1B344F" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M9 6L19 12" stroke="#1B344F" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+              <circle cx="14" cy="13" r="2" fill="#1B344F" fill-opacity="0.15" stroke="#1B344F" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="solution-card__title">1nativoone ERP</h3>
+          <p class="solution-card__desc">
+            ERP empresarial de nueva generación. Arquitectura de microservicios, seguridad avanzada, rendimiento de clase mundial.
+          </p>
+          <span class="solution-card__link">
+            Conocer más
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       TRUST SECTION
+       ================================================================ -->
+  <section class="trust" id="confianza">
+    <div class="container">
+      <!-- Trust Stats -->
+      <div class="trust__stats animate-on-scroll">
+        <div class="trust__stat">
+          <span class="trust__stat-number">+20</span>
+          <span class="trust__stat-label">años</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-number">4</span>
+          <span class="trust__stat-label">líneas de negocio</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-number">+1,000</span>
+          <span class="trust__stat-label">equipos</span>
+        </div>
+        <div class="trust__stat">
+          <span class="trust__stat-number">1</span>
+          <span class="trust__stat-label">ERP propio</span>
+        </div>
+      </div>
+
+      <!-- Three Pillars -->
+      <div class="trust__pillars animate-on-scroll">
+        <div class="trust__pillar">
+          <div class="trust__pillar-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M16 4L20 12L28 13.5L22 19.5L23.5 28L16 24L8.5 28L10 19.5L4 13.5L12 12L16 4Z" stroke="var(--color-primary-400)" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="trust__pillar-title">Experiencia</h3>
+          <p class="trust__pillar-desc">
+            Más de dos décadas resolviendo desafíos tecnológicos para empresas colombianas y multinacionales.
+          </p>
+        </div>
+        <div class="trust__pillar">
+          <div class="trust__pillar-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 16L15 19L21 13" stroke="var(--color-primary-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="16" r="12" stroke="var(--color-primary-400)" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3 class="trust__pillar-title">Calidad de Servicio</h3>
+          <p class="trust__pillar-desc">
+            Soporte dedicado, tiempos de respuesta comprometidos y acompañamiento continuo en cada proyecto.
+          </p>
+        </div>
+        <div class="trust__pillar">
+          <div class="trust__pillar-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M16 6V16L22 20" stroke="var(--color-primary-400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="16" r="12" stroke="var(--color-primary-400)" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3 class="trust__pillar-title">Compromiso</h3>
+          <p class="trust__pillar-desc">
+            Su éxito es nuestro éxito. Trabajamos como aliados estratégicos, no como simples proveedores.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================================
+       LOGO STRIP — Infinite sliding banner
+       ================================================================ -->
+  <section class="logo-strip">
+    <p class="logo-strip__title">Empresas que confían en nosotros</p>
+    <div class="logo-strip__track">
+      <div class="logo-strip__slide">
+        <span class="logo-strip__logo">Johnson &amp; Johnson</span>
+        <span class="logo-strip__logo">Omnilife</span>
+        <span class="logo-strip__logo">Innovateq</span>
+        <span class="logo-strip__logo">Brakepak</span>
+        <span class="logo-strip__logo">Johnson &amp; Johnson</span>
+        <span class="logo-strip__logo">Omnilife</span>
+        <span class="logo-strip__logo">Innovateq</span>
+        <span class="logo-strip__logo">Brakepak</span>
+      </div>
+      <div class="logo-strip__slide" aria-hidden="true">
+        <span class="logo-strip__logo">Johnson &amp; Johnson</span>
+        <span class="logo-strip__logo">Omnilife</span>
+        <span class="logo-strip__logo">Innovateq</span>
+        <span class="logo-strip__logo">Brakepak</span>
+        <span class="logo-strip__logo">Johnson &amp; Johnson</span>
+        <span class="logo-strip__logo">Omnilife</span>
+        <span class="logo-strip__logo">Innovateq</span>
+        <span class="logo-strip__logo">Brakepak</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT SECTION
+       ================================================================ -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <h2 class="contact__title animate-on-scroll">Contáctenos</h2>
+      <p class="contact__subtitle animate-on-scroll">
+        Estamos listos para ayudarle a transformar su empresa con tecnología
+      </p>
+
+      <div class="contact__grid">
+        <!-- Info Panel -->
+        <div class="contact__info animate-on-scroll">
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10 10.5C11.3807 10.5 12.5 9.38071 12.5 8C12.5 6.61929 11.3807 5.5 10 5.5C8.61929 5.5 7.5 6.61929 7.5 8C7.5 9.38071 8.61929 10.5 10 10.5Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 18C10 18 17 13 17 8C17 4.13401 13.866 1 10 1C6.13401 1 3 4.13401 3 8C3 13 10 18 10 18Z" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Dirección</strong>
+              <p>Calle 125 # 19 - 89, Oficina 502<br>Bogotá, Colombia</p>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18 14.5V17C18 17.55 17.55 18 17 18C9.28 18 3 11.72 3 4C3 3.45 3.45 3 4 3H6.5C7.05 3 7.5 3.45 7.5 4C7.5 5.25 7.7 6.45 8.07 7.57C8.18 7.92 8.1 8.31 7.82 8.59L6.09 10.32C7.57 13.17 9.83 15.43 12.68 16.91L14.41 15.18C14.69 14.9 15.08 14.82 15.43 14.93C16.55 15.3 17.75 15.5 19 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Teléfono</strong>
+              <p><a href="tel:+5716582646">+57 1 658 26 46</a></p>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M17 3H3C2.45 3 2 3.45 2 4V16C2 16.55 2.45 17 3 17H17C17.55 17 18 16.55 18 16V4C18 3.45 17.55 3 17 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 5L10 11L18 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <p><a href="https://wa.me/573102961407" target="_blank" rel="noopener noreferrer">+57 310 296 1407</a></p>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="3" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 6L10 11L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Correo electrónico</strong>
+              <p><a href="mailto:arar@arar.com.co">arar@arar.com.co</a></p>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 5V10L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <strong>Horario de atención</strong>
+              <p>Lun - Vie, 9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrapper animate-on-scroll">
+          <form class="contact__form" action="#" method="POST">
+            <div class="contact__form-row">
+              <div class="contact__form-group">
+                <label for="contact-name">Nombre completo</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Su nombre">
+              </div>
+              <div class="contact__form-group">
+                <label for="contact-email">Correo electrónico</label>
+                <input type="email" id="contact-email" name="email" required placeholder="correo@empresa.com">
+              </div>
+            </div>
+            <div class="contact__form-row">
+              <div class="contact__form-group">
+                <label for="contact-phone">Teléfono</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="+57 300 000 0000">
+              </div>
+              <div class="contact__form-group">
+                <label for="contact-company">Empresa</label>
+                <input type="text" id="contact-company" name="company" placeholder="Nombre de su empresa">
+              </div>
+            </div>
+            <div class="contact__form-group">
+              <label for="contact-service">Servicio de interés</label>
+              <select id="contact-service" name="service">
+                <option value="" disabled selected>Seleccione un servicio</option>
+                <option value="sap">Consultoría SAP</option>
+                <option value="alquiler">Alquiler de Equipos IT</option>
+                <option value="ia">Automatización IA</option>
+                <option value="1nativoone">1nativoone ERP</option>
+              </select>
+            </div>
+            <div class="contact__form-group">
+              <label for="contact-message">Mensaje</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Cuéntenos sobre su proyecto o necesidad..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary contact__form-submit">
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* ==================================================================
+     HERO SECTION
+     ================================================================== */
+  .hero {
+    position: relative;
+    background: linear-gradient(160deg, var(--color-neutral-950) 0%, var(--color-neutral-900) 60%, var(--color-primary-900) 100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(59, 112, 166, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(107, 91, 149, 0.04) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  #hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: var(--space-16);
+  }
+
+  .hero__title {
+    color: #ffffff;
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.08;
+    max-width: 700px;
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.02em;
+  }
+
+  .hero__subtitle {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.125rem;
+    max-width: 560px;
+    margin-bottom: var(--space-8);
+    line-height: 1.6;
+  }
+
+  .hero__ctas {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn--white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 15px 35px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 9999px;
+    cursor: pointer;
+    background: #ffffff;
+    color: var(--color-primary-900);
+    transition:
+      background-color var(--transition),
+      color var(--transition),
+      border-color var(--transition),
+      box-shadow var(--transition),
+      transform var(--transition);
+  }
+
+  .btn--white:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn--outline-white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 15px 35px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 9999px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    transition:
+      background-color var(--transition),
+      color var(--transition),
+      border-color var(--transition),
+      box-shadow var(--transition),
+      transform var(--transition);
+  }
+
+  .btn--outline-white:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Stats Bar */
+  .hero__stats {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--space-6) 0;
+  }
+
+  .hero__stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+    text-align: center;
+  }
+
+  .hero__stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .hero__stat-number {
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
+  }
+
+  .hero__stat-label {
+    color: var(--color-primary-300);
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* ==================================================================
+     SOLUTIONS OVERVIEW
+     ================================================================== */
+  .solutions {
+    padding: 96px 0;
+    background: var(--color-bg);
+  }
+
+  .solutions__header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .solutions__title {
+    margin-bottom: var(--space-3);
+  }
+
+  .solutions__subtitle {
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .solutions__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  /* Solution Cards */
+  .solution-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition:
+      outline-color var(--transition),
+      box-shadow var(--transition);
+  }
+
+  .solution-card:hover {
+    color: inherit;
+  }
+
+  .solution-card--sap,
+  .solution-card--renting,
+  .solution-card--nativoone {
+    background: var(--color-primary-50);
+  }
+
+  .solution-card--sap:hover,
+  .solution-card--renting:hover,
+  .solution-card--nativoone:hover {
+    outline-color: var(--color-primary);
+  }
+
+  .solution-card--ai {
+    background: var(--color-primary-50);
+  }
+
+  .solution-card--ai:hover {
+    outline-color: var(--color-primary);
+  }
+
+  .solution-card__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+  }
+
+  .solution-card__icon--sap,
+  .solution-card__icon--renting,
+  .solution-card__icon--nativoone {
+    background: var(--color-primary-100);
+  }
+
+  .solution-card__icon--ai {
+    background: var(--color-primary-100);
+  }
+
+  .solution-card__title {
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--space-2);
+  }
+
+  .solution-card__desc {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: var(--space-4);
+  }
+
+  .solution-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    transition: gap var(--transition);
+  }
+
+  .solution-card:hover .solution-card__link {
+    gap: 10px;
+  }
+
+  /* ==================================================================
+     TRUST / STATS SECTION
+     ================================================================== */
+  .trust {
+    padding: 96px 0;
+    background: var(--color-bg-alt);
+  }
+
+  /* Trust Stats — white inner container */
+  .trust__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    text-align: center;
+    margin-bottom: var(--space-16);
+    background: #ffffff;
+    border-radius: var(--radius-2xl);
+    padding: 48px;
+  }
+
+  .trust__stat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .trust__stat-number {
+    color: var(--color-dark);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1;
+  }
+
+  .trust__stat-label {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* Trust Pillars */
+  .trust__pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: var(--space-16);
+  }
+
+  .trust__pillar {
+    padding: 28px;
+    background: #ffffff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: box-shadow var(--transition);
+  }
+
+  .trust__pillar:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .trust__pillar-icon {
+    margin-bottom: var(--space-4);
+  }
+
+  .trust__pillar-title {
+    color: var(--color-dark);
+    font-size: 1.15rem;
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-2);
+  }
+
+  .trust__pillar-desc {
+    color: var(--color-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Client Logos */
+  .trust__clients {
+    text-align: center;
+  }
+
+  .trust__clients-title {
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: var(--space-6);
+  }
+
+  .trust__clients-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-12);
+    flex-wrap: wrap;
+  }
+
+  .trust__client-logo {
+    color: var(--color-neutral-400);
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.02em;
+    transition: color var(--transition);
+  }
+
+  .trust__client-logo:hover {
+    color: var(--color-dark);
+  }
+
+  /* ==================================================================
+     FAQ SECTION
+     ================================================================== */
+  .faq {
+    padding: 96px 0;
+    background: var(--color-bg);
+  }
+
+  .faq__wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .faq__title {
+    text-align: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .faq__item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .faq__item:first-child {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .faq__item[open] {
+    border-color: var(--color-border);
+  }
+
+  .faq__item[open] + .faq__item {
+    border-top-color: var(--color-border);
+  }
+
+  .faq__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: 20px 0;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-dark);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    transition: color var(--transition);
+  }
+
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__question::marker {
+    display: none;
+    content: '';
+  }
+
+  .faq__question::after {
+    content: '';
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6L8 10L12 6' stroke='%237A8D9F' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    transition: transform var(--transition);
+  }
+
+  .faq__item[open] .faq__question {
+    color: var(--color-dark);
+  }
+
+  .faq__item[open] .faq__question::after {
+    transform: rotate(180deg);
+  }
+
+  .faq__question:hover {
+    color: var(--color-primary);
+  }
+
+  .faq__answer {
+    padding: 0 0 20px 0;
+  }
+
+  .faq__answer p {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.7;
+  }
+
+  /* ==================================================================
+     LOGO STRIP — Infinite sliding banner
+     ================================================================== */
+  .logo-strip {
+    padding: 48px 0;
+    background: var(--color-primary-900);
+    overflow: hidden;
+  }
+
+  .logo-strip__title {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary-300);
+    margin-bottom: var(--space-6);
+  }
+
+  .logo-strip__track {
+    display: flex;
+    width: max-content;
+    animation: slide 10s linear infinite;
+  }
+
+  .logo-strip__slide {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 0 32px;
+  }
+
+  .logo-strip__logo {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    transition: color var(--transition);
+    user-select: none;
+  }
+
+  .logo-strip__logo:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .logo-strip__track {
+      animation: none;
+      flex-wrap: wrap;
+      width: auto;
+      justify-content: center;
+    }
+  }
+
+  /* ==================================================================
+     CONTACT SECTION
+     ================================================================== */
+  .contact {
+    padding: 96px 0;
+    background: var(--color-bg-alt);
+  }
+
+  .contact__title {
+    text-align: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .contact__subtitle {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+    margin-bottom: var(--space-12);
+  }
+
+  .contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 56px;
+    align-items: flex-start;
+  }
+
+  /* Contact Info */
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .contact__info-item {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+  }
+
+  .contact__info-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-50);
+    border-radius: var(--radius-sm);
+    color: var(--color-primary);
+  }
+
+  .contact__info-item strong {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-dark);
+    margin-bottom: 2px;
+  }
+
+  .contact__info-item p {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+
+  .contact__info-item a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  .contact__info-item a:hover {
+    color: var(--color-primary-dark);
+  }
+
+  /* Contact Form */
+  .contact__form-wrapper {
+    background: #ffffff;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: 40px;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .contact__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .contact__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contact__form-group label {
+    font-size: 0.83rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-dark);
+  }
+
+  .contact__form-group input,
+  .contact__form-group select,
+  .contact__form-group textarea {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition:
+      border-color var(--transition),
+      box-shadow var(--transition);
+    outline: none;
+  }
+
+  .contact__form-group input::placeholder,
+  .contact__form-group textarea::placeholder {
+    color: var(--color-neutral-400);
+  }
+
+  .contact__form-group input:focus,
+  .contact__form-group select:focus,
+  .contact__form-group textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(59, 112, 166, 0.1);
+  }
+
+  .contact__form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .contact__form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%237A8D9F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+  }
+
+  .contact__form-submit {
+    width: 100%;
+    margin-top: var(--space-2);
+    border-radius: 9999px;
+  }
+
+  /* ==================================================================
+     RESPONSIVE — 992px (Tablet Landscape)
+     ================================================================== */
+  @media (max-width: 992px) {
+    .solutions__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust__stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-8);
+      padding: 36px;
+    }
+
+    .trust__pillars {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .contact__grid {
+      gap: 36px;
+    }
+  }
+
+  /* ==================================================================
+     RESPONSIVE — 768px (Tablet Portrait / Mobile)
+     ================================================================== */
+  @media (max-width: 768px) {
+    .hero__content {
+      padding-top: 120px;
+      padding-bottom: var(--space-12);
+    }
+
+    .hero__title {
+      font-size: clamp(1.8rem, 6vw, 2.4rem);
+    }
+
+    .hero__stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+    }
+
+    .solutions {
+      padding: 64px 0;
+    }
+
+    .solutions__grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .trust {
+      padding: 64px 0;
+    }
+
+    .trust__stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+      padding: 28px;
+      border-radius: var(--radius-lg);
+    }
+
+    .trust__pillars {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .faq {
+      padding: 64px 0;
+    }
+
+    .contact {
+      padding: 64px 0;
+    }
+
+    .contact__grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+    }
+
+    .contact__form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .contact__form-wrapper {
+      padding: 24px;
+    }
+  }
+
+  /* ==================================================================
+     RESPONSIVE — 480px (Small Mobile)
+     ================================================================== */
+  @media (max-width: 480px) {
+    .hero {
+      min-height: auto;
+    }
+
+    .hero__content {
+      padding-top: 110px;
+      padding-bottom: var(--space-8);
+    }
+
+    .hero__title {
+      font-size: 1.7rem;
+    }
+
+    .hero__subtitle {
+      font-size: 0.95rem;
+    }
+
+    .hero__ctas {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn--white,
+    .btn--outline-white {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .hero__stats-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+    }
+
+    .hero__stat {
+      flex-direction: row;
+      justify-content: center;
+      gap: var(--space-2);
+      align-items: baseline;
+    }
+
+    .solutions__title,
+    .trust__stat-number {
+      font-size: 1.5rem;
+    }
+
+    .faq__title {
+      font-size: 1.5rem;
+    }
+
+    .contact__title {
+      font-size: 1.5rem;
+    }
+
+    .trust__stat-number {
+      font-size: 1.8rem;
+    }
+
+    .trust__stats {
+      padding: 20px;
+      border-radius: var(--radius);
+    }
+
+    .trust__clients-grid {
+      gap: var(--space-8);
+    }
+
+    .trust__client-logo {
+      font-size: 0.95rem;
+    }
+
+    .contact__form-submit {
+      width: 100%;
+    }
+  }
+
+  /* ==================================================================
+     ANIMATION CLASSES (for GSAP targeting)
+     ================================================================== */
+  .animate-on-scroll {
+    opacity: 1;
+  }
+</style>

@@ -1,0 +1,371 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHeroCanvas from '../components/PageHeroCanvas.astro';
+---
+
+<Layout title="Automatización IA — ARAR Representaciones" description="Transforme procesos manuales en flujos inteligentes impulsados por inteligencia artificial. Soluciones a medida con ROI medible.">
+  <Header />
+
+  <main>
+    <!-- Mini Hero -->
+    <section class="hero">
+      <PageHeroCanvas variant="ia" />
+      <div class="hero__container">
+        <span class="badge badge--ai animate-on-scroll">Automatización IA</span>
+        <h1 class="hero__heading animate-on-scroll">Automatice. Escale. Crezca.</h1>
+        <p class="hero__subtitle animate-on-scroll">Transforme procesos manuales en flujos inteligentes impulsados por inteligencia artificial.</p>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+      <div class="process__container">
+        <h2 class="process__heading animate-on-scroll">Nuestro proceso</h2>
+        <p class="process__intro animate-on-scroll">Tres pasos para transformar su operación con inteligencia artificial.</p>
+        <div class="process__steps">
+          <div class="process__step animate-on-scroll">
+            <span class="process__step-number">1</span>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Diagnóstico</h3>
+              <p class="process__step-text">Analizamos sus procesos actuales e identificamos las oportunidades de automatización de mayor impacto.</p>
+            </div>
+          </div>
+          <div class="process__step animate-on-scroll">
+            <span class="process__step-number">2</span>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Implementación</h3>
+              <p class="process__step-text">Diseñamos y desplegamos soluciones de IA personalizadas, integradas con sus sistemas existentes.</p>
+            </div>
+          </div>
+          <div class="process__step animate-on-scroll">
+            <span class="process__step-number">3</span>
+            <div class="process__step-content">
+              <h3 class="process__step-title">Optimización</h3>
+              <p class="process__step-text">Monitoreo continuo y mejora iterativa para maximizar el retorno de su inversión en IA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value">
+      <div class="value__container">
+        <h2 class="value__heading animate-on-scroll">¿Por qué automatizar con ARAR?</h2>
+        <div class="value__grid">
+          <div class="value__card animate-on-scroll">
+            <div class="value__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="value__card-title">Soluciones a medida</h3>
+            <p class="value__card-text">No vendemos productos genéricos. Cada solución se diseña específicamente para los procesos y necesidades de su empresa.</p>
+          </div>
+          <div class="value__card animate-on-scroll">
+            <div class="value__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="value__card-title">Integración total</h3>
+            <p class="value__card-text">Nuestras soluciones se integran con su stack tecnológico existente. No necesita reemplazar nada — potenciamos lo que ya tiene.</p>
+          </div>
+          <div class="value__card animate-on-scroll">
+            <div class="value__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="value__card-title">ROI medible</h3>
+            <p class="value__card-text">Definimos métricas claras desde el inicio y medimos el impacto real de cada automatización en su operación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* =============================================
+     HERO
+     ============================================= */
+  .hero {
+    position: relative;
+    background: linear-gradient(160deg, var(--color-neutral-950) 0%, var(--color-neutral-900) 60%, var(--color-primary-900) 100%);
+    padding: 140px 0 64px;
+    text-align: center;
+  }
+
+  .hero__container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .hero .badge {
+    margin-bottom: 20px;
+    background-color: rgba(59, 112, 166, 0.2);
+    color: #8FB2D6;
+  }
+
+  .hero__heading {
+    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .hero__subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: #9EADBB;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* =============================================
+     PROCESS
+     ============================================= */
+  .process {
+    padding: 96px 0;
+    background-color: var(--color-bg, #ffffff);
+  }
+
+  .process__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .process__heading {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--color-dark, #1A2332);
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .process__intro {
+    font-size: 1.05rem;
+    color: var(--color-text, #3D4F63);
+    text-align: center;
+    margin-bottom: 56px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .process__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .process__step {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .process__step-number {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-900, #1B344F);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 50%;
+  }
+
+  .process__step-content {
+    flex: 1;
+    padding-top: 4px;
+  }
+
+  .process__step-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-dark, #1A2332);
+    margin-bottom: 8px;
+  }
+
+  .process__step-text {
+    font-size: 0.95rem;
+    color: var(--color-text, #3D4F63);
+    line-height: 1.6;
+  }
+
+  /* =============================================
+     VALUE PROPOSITION
+     ============================================= */
+  .value {
+    padding: 96px 0;
+    background-color: var(--color-bg-alt, #F6F8FA);
+  }
+
+  .value__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .value__heading {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--color-dark, #1A2332);
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .value__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .value__card {
+    background-color: #ffffff;
+    border-radius: var(--radius-lg, 16px);
+    padding: 36px 28px;
+    box-shadow: var(--shadow-sm, 0 1px 2px rgba(15, 20, 25, 0.05));
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .value__card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg, 0 4px 8px rgba(15, 20, 25, 0.06), 0 12px 32px rgba(15, 20, 25, 0.08));
+  }
+
+  .value__card-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-light, #EDF2F8);
+    color: var(--color-primary-900, #1B344F);
+    border-radius: var(--radius, 10px);
+    margin-bottom: 20px;
+  }
+
+  .value__card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-dark, #1A2332);
+    margin-bottom: 10px;
+  }
+
+  .value__card-text {
+    font-size: 0.92rem;
+    color: var(--color-text, #3D4F63);
+    line-height: 1.6;
+  }
+
+  /* =============================================
+     RESPONSIVE
+     ============================================= */
+  @media (max-width: 1024px) {
+    .value__grid {
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 120px 0 48px;
+    }
+
+    .process {
+      padding: 64px 0;
+    }
+
+    .process__intro {
+      margin-bottom: 40px;
+    }
+
+    .process__steps {
+      gap: 32px;
+    }
+
+    .value {
+      padding: 64px 0;
+    }
+
+    .value__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding: 108px 0 40px;
+    }
+
+    .hero__heading {
+      font-size: 1.6rem;
+    }
+
+    .process {
+      padding: 48px 0;
+    }
+
+    .process__step {
+      gap: 16px;
+    }
+
+    .process__step-number {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+
+    .value {
+      padding: 48px 0;
+    }
+
+    .value__card {
+      padding: 28px 20px;
+    }
+
+  }
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const animElements = document.querySelectorAll('.animate-on-scroll');
+
+  animElements.forEach((el) => {
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          once: true,
+        },
+      }
+    );
+  });
+</script>

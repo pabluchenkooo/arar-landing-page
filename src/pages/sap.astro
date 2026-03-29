@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageHeroCanvas from '../components/PageHeroCanvas.astro';
+---
+
+<Layout title="Consultoría SAP — ARAR Representaciones" description="Más de 20 años de experiencia en implementación, desarrollo ABAP y optimización de procesos SAP. Consultores certificados a su servicio.">
+  <Header />
+
+  <main>
+    <!-- Mini Hero -->
+    <section class="hero">
+      <PageHeroCanvas variant="sap" />
+      <div class="hero__container">
+        <span class="badge badge--sap animate-on-scroll">Consultoría SAP</span>
+        <h1 class="hero__heading animate-on-scroll">Maximice el potencial de su ERP SAP</h1>
+        <p class="hero__subtitle animate-on-scroll">Más de 20 años de experiencia en implementación, desarrollo ABAP y optimización de procesos SAP.</p>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+      <div class="content__container">
+        <div class="content__grid">
+          <div class="content__description animate-on-scroll">
+            <h2 class="content__title">Expertos en SAP a su servicio</h2>
+            <p class="content__text">
+              Nuestro equipo de consultores certificados trabaja con su organización para implementar, personalizar y optimizar su sistema SAP. No reemplazamos — maximizamos lo que ya tiene.
+            </p>
+            <p class="content__text">
+              Entendemos que cada empresa es única. Por eso nuestras soluciones SAP se adaptan a sus procesos de negocio, no al revés.
+            </p>
+          </div>
+
+          <div class="content__capabilities animate-on-scroll">
+            <h3 class="capabilities__title">Nuestras capacidades</h3>
+            <ul class="capabilities__list">
+              <li class="capabilities__item">
+                <span class="capabilities__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <span>Implementación y configuración de módulos SAP</span>
+              </li>
+              <li class="capabilities__item">
+                <span class="capabilities__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <span>Desarrollo ABAP personalizado</span>
+              </li>
+              <li class="capabilities__item">
+                <span class="capabilities__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <span>Reportes y dashboards a medida</span>
+              </li>
+              <li class="capabilities__item">
+                <span class="capabilities__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <span>Optimización de procesos dentro del ERP existente</span>
+              </li>
+              <li class="capabilities__item">
+                <span class="capabilities__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </span>
+                <span>Soporte técnico continuo y mantenimiento</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* =============================================
+     HERO
+     ============================================= */
+  .hero {
+    position: relative;
+    background: linear-gradient(160deg, var(--color-neutral-950) 0%, var(--color-neutral-900) 60%, var(--color-primary-900) 100%);
+    padding: 140px 0 64px;
+    text-align: center;
+  }
+
+  .hero__container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .hero .badge {
+    margin-bottom: 20px;
+    background-color: rgba(59, 112, 166, 0.2);
+    color: #8FB2D6;
+  }
+
+  .hero__heading {
+    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .hero__subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: #9EADBB;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* =============================================
+     CONTENT
+     ============================================= */
+  .content {
+    padding: 96px 0;
+    background-color: var(--color-bg, #ffffff);
+  }
+
+  .content__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .content__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .content__title {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--color-dark, #1A2332);
+    margin-bottom: 20px;
+  }
+
+  .content__text {
+    font-size: 1rem;
+    color: var(--color-text, #3D4F63);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .content__text:last-child {
+    margin-bottom: 0;
+  }
+
+  .capabilities__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-dark, #1A2332);
+    margin-bottom: 24px;
+  }
+
+  .capabilities__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .capabilities__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--color-text, #3D4F63);
+    line-height: 1.5;
+  }
+
+  .capabilities__icon {
+    flex-shrink: 0;
+    color: var(--color-primary-900, #1B344F);
+    margin-top: 2px;
+  }
+
+  /* =============================================
+     RESPONSIVE
+     ============================================= */
+  @media (max-width: 1024px) {
+    .content__grid {
+      gap: 48px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 120px 0 48px;
+    }
+
+    .content {
+      padding: 64px 0;
+    }
+
+    .content__grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding: 108px 0 40px;
+    }
+
+    .hero__heading {
+      font-size: 1.6rem;
+    }
+
+    .content {
+      padding: 48px 0;
+    }
+
+  }
+</style>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const animElements = document.querySelectorAll('.animate-on-scroll');
+
+  animElements.forEach((el) => {
+    gsap.fromTo(
+      el,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          once: true,
+        },
+      }
+    );
+  });
+</script>

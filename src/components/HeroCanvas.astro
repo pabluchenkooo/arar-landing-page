@@ -1,0 +1,131 @@
+---
+/**
+ * HeroCanvas — Single ARAR ant logo centered in the hero with subtle glow.
+ */
+---
+
+<div class="hero-canvas" id="hero-canvas-container" aria-hidden="true"></div>
+
+<script>
+  function initHeroCanvas() {
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches;
+    if (prefersReducedMotion) return;
+
+    const container = document.getElementById('hero-canvas-container');
+    if (!container) return;
+    if (container.querySelector('canvas')) return;
+
+    const img = new Image();
+    img.src = '/ant-logo.png';
+    img.onload = () => startSketch(container, img);
+  }
+
+  async function startSketch(container, logoImg) {
+    const p5Module = await import('p5');
+    const p5Constructor = p5Module.default;
+
+    const GLOW = '#6E9AC8';
+
+    new p5Constructor((p) => {
+      let cw = 0;
+      let ch = 0;
+      let time = 0;
+
+      p.setup = () => {
+        cw = container.offsetWidth;
+        ch = container.offsetHeight;
+        if (cw === 0 || ch === 0) { cw = 800; ch = 600; }
+        const cvs = p.createCanvas(cw, ch);
+        cvs.parent(container);
+        p.pixelDensity(window.devicePixelRatio || 2);
+        const ctx = p.drawingContext;
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+      };
+
+      p.draw = () => {
+        p.clear();
+        time += 0.016;
+
+        const ctx = p.drawingContext;
+        const aspect = logoImg.naturalWidth / logoImg.naturalHeight;
+        const ah = ch * 0.82;
+        const aw = ah * aspect;
+        const cx = cw / 2;
+        const cy = ch * 0.46;
+
+        // Subtle breathing
+        const breathe = 1 + Math.sin(time * 1.2) * 0.004;
+
+        // Gentle glow pulse
+        const glow = 20 + Math.sin(time * 1.6) * 6;
+
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.scale(breathe, breathe);
+
+        // Outer glow
+        ctx.shadowBlur = glow * 2.5;
+        ctx.shadowColor = GLOW;
+        ctx.globalAlpha = 0.12;
+        ctx.drawImage(logoImg, -aw / 2, -ah / 2, aw, ah);
+
+        // Inner glow
+        ctx.shadowBlur = glow;
+        ctx.shadowColor = GLOW;
+        ctx.globalAlpha = 0.35;
+        ctx.drawImage(logoImg, -aw / 2, -ah / 2, aw, ah);
+
+        // Crisp
+        ctx.shadowBlur = 0;
+        ctx.globalAlpha = 1.0;
+        ctx.drawImage(logoImg, -aw / 2, -ah / 2, aw, ah);
+
+        ctx.restore();
+      };
+
+      p.windowResized = () => {
+        cw = container.offsetWidth;
+        ch = container.offsetHeight;
+        if (cw > 0 && ch > 0) p.resizeCanvas(cw, ch);
+      };
+    });
+  }
+
+  function boot() {
+    requestAnimationFrame(() => initHeroCanvas());
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+  document.addEventListener('astro:page-load', boot);
+</script>
+
+<style>
+  .hero-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .hero-canvas :global(canvas) {
+    display: block;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-canvas {
+      display: none;
+    }
+  }
+</style>
