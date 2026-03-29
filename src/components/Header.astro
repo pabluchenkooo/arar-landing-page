@@ -1,16 +1,17 @@
 ---
+const base = import.meta.env.BASE_URL;
 const navLinks = [
-  { label: 'Soluciones', href: '/#soluciones' },
-  { label: 'SAP', href: '/sap' },
-  { label: 'Alquiler IT', href: '/alquiler' },
-  { label: 'IA', href: '/ia' },
-  { label: '1nativoone', href: '/1nativoone' },
+  { label: 'Soluciones', href: `${base}#soluciones` },
+  { label: 'SAP', href: `${base}sap` },
+  { label: 'Alquiler IT', href: `${base}alquiler` },
+  { label: 'IA', href: `${base}ia` },
+  { label: '1nativoone', href: `${base}1nativoone` },
 ];
 ---
 
 <header class="header" id="main-header">
   <div class="header__inner">
-    <a href="/" class="header__logo">
+    <a href={base} class="header__logo">
       <span class="header__logo-text">ARAR</span>
     </a>
 
@@ -22,10 +23,10 @@ const navLinks = [
           </li>
         ))}
       </ul>
-      <a href="/#contacto" class="header__cta header__cta--mobile">Contacto</a>
+      <a href={`${base}#contacto`} class="header__cta header__cta--mobile">Contacto</a>
     </nav>
 
-    <a href="/#contacto" class="header__cta header__cta--desktop">Contacto</a>
+    <a href={`${base}#contacto`} class="header__cta header__cta--desktop">Contacto</a>
 
     <button
       class="header__hamburger"

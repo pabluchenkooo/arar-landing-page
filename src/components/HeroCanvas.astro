@@ -2,9 +2,10 @@
 /**
  * HeroCanvas — Single ARAR ant logo centered in the hero with subtle glow.
  */
+const base = import.meta.env.BASE_URL;
 ---
 
-<div class="hero-canvas" id="hero-canvas-container" aria-hidden="true"></div>
+<div class="hero-canvas" id="hero-canvas-container" aria-hidden="true" data-base={base}></div>
 
 <script>
   function initHeroCanvas() {
@@ -17,8 +18,9 @@
     if (!container) return;
     if (container.querySelector('canvas')) return;
 
+    const base = container.dataset.base || '/';
     const img = new Image();
-    img.src = '/ant-logo.png';
+    img.src = base + 'ant-logo.png';
     img.onload = () => startSketch(container, img);
   }
 
