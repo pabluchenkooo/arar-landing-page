@@ -9,19 +9,25 @@ const base = import.meta.env.BASE_URL;
 
 <script>
   function initHeroCanvas() {
-    const prefersReducedMotion = window.matchMedia(
-      '(prefers-reduced-motion: reduce)'
-    ).matches;
-    if (prefersReducedMotion) return;
+    try {
+      const prefersReducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      ).matches;
+      if (prefersReducedMotion) return;
 
-    const container = document.getElementById('hero-canvas-container');
-    if (!container) return;
-    if (container.querySelector('canvas')) return;
+      const container = document.getElementById('hero-canvas-container');
+      if (!container) return;
+      if (container.querySelector('canvas')) return;
 
-    const base = container.dataset.base || '/';
-    const img = new Image();
-    img.src = base + 'ant-logo.png';
-    img.onload = () => startSketch(container, img);
+      const base = container.dataset.base || '/';
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      img.src = base + 'ant-logo.png';
+      img.onload = () => startSketch(container, img);
+      img.onerror = () => console.warn('Ant logo failed to load:', img.src);
+    } catch (e) {
+      console.warn('HeroCanvas init error:', e);
+    }
   }
 
   async function startSketch(container, logoImg) {
