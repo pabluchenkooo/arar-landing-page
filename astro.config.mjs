@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://arar.com.co',
+  site: 'https://www.arar.com.co',
   base: '/',
   output: 'static',
   build: {
